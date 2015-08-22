@@ -1,3 +1,9 @@
-{{!-- Game View Template --}}
+<ul>
+    {{#each structure as |floor|}}
+        <li>
+            <img src="/{{floor.image}}" alt="{{floor.name}}">
+        </li>
+    {{/each}}
+</ul>
 
 {{yield}}
