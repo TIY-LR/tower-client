@@ -1,10 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-
-  model:function() {
-    // Create a new menu item instance
-    // that we'll save to the server.
-    return this.store.createRecord('structure');
-  },
+  actions: {
+    buildStructure: function(type) {
+      debugger;
+    }
+  }
 });
+
+// does the user have enough money to buy the structure ?
+// if they do - they buy it, if they don't - send them an error
