@@ -1,5 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  // routes to available build options
+  model:function() {
+    // Create a new menu item instance
+    // that we'll save to the server.
+    return this.store.createRecord('structure');
+  },
 });
