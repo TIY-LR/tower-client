@@ -1,53 +1,31 @@
-# Iron-tower
+#Iron Tower
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#Description
 
-## Prerequisites
+Iron Tower will be a web-based where the user builds a tower, floor by floor. Each floor once built can be either businesses (restaurants, shopping outlets, etc) or apartments. Apartments allow for certain numbers of residents which have to be available to work at businesses. Each business generates income over time based on the type of floor it is (the time and payout varry and increase for each floor higher you go). You may theme this game as you like and can vary the balancing (residents allowed in aparemnts, time to payout, etc).
 
-You will need the following things properly installed on your computer.
+#Deliverables
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+* Trello Board including user stories, requirements, wireframes, etc..
+* An API served using Microsoft Azure
+* SQL Server Database for storage hosted on Microsoft Azure
+* A Web API Application hosted on Microsoft Azure
+* An API repostitory posted to Github
+* An Ember Application served using Divshot
+* An Ember Application repostitory posted to Github
 
-## Installation
+#Requirements
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+* User should have a cash balance
+* User should be able to purchase floors
+* User should receive cash based on floor income over time
+* User should be able to create apartments which allow residents
+* Residents should show up over time
+* User should not be able to build new businesses without unemployed residents
+* Developers should be able to configure game balancing with easy to get to variables
 
-## Running / Development
+#Resources and Libraries (Suggested not required)
 
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+* Hangfire (Timed jobs in .NET)
+* Polling Ember Data Models
 
