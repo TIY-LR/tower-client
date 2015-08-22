@@ -1,0 +1,9 @@
+<button class="rl-dropdown-toggle" {{action "toggleDropdown"}}>Build Options</button>
+
+{{#if dropdownExpanded}}
+
+  <div class="build-options-dropdown rl-dropdown">
+    ...
+    <a class="close-btn" {{action "closeDropdown"}}>Close</a>
+  </div>
+{{/if}}
