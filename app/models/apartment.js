@@ -9,4 +9,8 @@ export default DS.Model.extend({
   upkeep: DS.attr('number'),
   initialCost: DS.attr('number'),
   supportedPop: DS.attr('number'),
+
+  image: Ember.computed('name', function() {
+    return `${this.get('name')}.gif`;
+  })
 });
