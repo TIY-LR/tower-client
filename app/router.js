@@ -6,11 +6,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('game', function() {
-    this.route('start');
-    this.route('build');
-    this.route('building-view');
-  });
+  this.route('game', {path: '/'}, function() {
+    this.route('start',  {path: '/start'});
+    this.route('build',  {path: '/build'});
+    this.route('building-view',  {path: '/tower-view'});
 });
-
+});
 export default Router;
