@@ -1,37 +1,23 @@
 @import "bourbon";
 @import "neat";
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+
+   background: url("http://changceinstitute.org/wp-content/uploads/2013/10/green-city-wallpaper.1920x1080.jpg") no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
 .build-options {
     @include span-columns(3);
+  }
 
-    }
-
- html{
-    background-image: url("http://naturewallpaperspic.com/wp-content/uploads/2015/04/Hd-1920X1080-Nature-4.jpg");
-    border: solid 20px green;
-
-
-   min-height: 100%;
-
-     }
-
-
-li{
-    display:block;
-    position: relative;
-    border: solid lime 2px;
-    width:250px;
-
- }
-
-.moneySpent li{
-
-  width:500px;
-  height:50px;
-  position:relative;
-
-}
-
-span{
-    background-color: white;
-}
