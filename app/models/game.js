@@ -9,6 +9,6 @@ import DS from 'ember-data';
 export default DS.Model.extend({
   currency: DS.attr('number'),
   totalPop: DS.attr('number'),
-  floors: DS.attr('number'),
+  floors: DS.hasMany('structure', {polymorphic: true, async: true}),
   // business ?
 });
