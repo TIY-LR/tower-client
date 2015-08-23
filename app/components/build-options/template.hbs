@@ -1,9 +1,9 @@
 {{!-- Build Options Template --}}
 
 {{#each structures as |structure|}}
-    <div class="" {{action 'build' structure.type}}>
+    <div class="sidebar" {{action 'build' structure.type}}>
         <img src="{{structure.name}}.gif">
-        <span class="">Cost: ${{structure.price}}</span>
-        <span class="">{{structure.description}}</span>
+        <span class="">Cost: ${{structure.price}}</span><br>
+        <span class="">{{structure.description}}</span><br>
     </div>
 {{/each}}

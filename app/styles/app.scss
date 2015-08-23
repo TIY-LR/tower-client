@@ -9,6 +9,7 @@ html {
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
+   @include outer-container(1000px);
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -47,7 +48,7 @@ html {
   flex-direction: column-reverse;
   position: absolute;
   bottom: 5%;
-  right: 25%;
+  right: 35%;
 }
 
 ul {
@@ -70,6 +71,11 @@ li {
 .build-options {
     @include span-columns(3);
   }
+.sidebar {
+  padding-bottom: 1em;
+  background-color: white;
+  border: 1px solid black;
+}
 
 span {
     background-color: white;
