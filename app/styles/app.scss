@@ -15,8 +15,18 @@ html {
   box-sizing: inherit;
 }
 
+.game-data {
+  width: 231px;
+  border: 1px solid black;
+}
+.game-data span {
+  display: block;
+  padding-bottom: .5em;
+}
+
 .build-options {
   @include span-columns(3);
+  padding-top: 1em;
 }
 
 .game-view {
@@ -58,6 +68,7 @@ ul {
 li {
   display:block;
   position: relative;
+  border: 1px solid black;
 
   width: 100%;
  }
@@ -75,8 +86,8 @@ li {
   padding-bottom: 1em;
   background-color: white;
   border: 1px solid black;
+  margin-top: 1em;
 }
-
 span {
     background-color: white;
 }
