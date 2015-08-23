@@ -1,6 +1,8 @@
+@import "reset";
 @import "bourbon";
 @import "neat";
 
+<<<<<<< HEAD
 html {
   box-sizing: border-box;
 }
@@ -9,6 +11,52 @@ html {
 }
 
 html {
+=======
+.build-options {
+  @include span-columns(3);
+}
+
+.game-view {
+  @include span-columns(3);
+}
+
+.build-options, .game-view {
+  img {
+    max-width: 100%;
+  }
+}
+
+ html{
+  background-image: url("http://naturewallpaperspic.com/wp-content/uploads/2015/04/Hd-1920X1080-Nature-4.jpg");
+  border: solid 20px green;
+
+ min-height: 100%;
+}
+.iron-tower {
+  display: flex;
+  flex-direction: column-reverse;
+  position: absolute;
+  bottom: 5%;
+  right: 25%;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  display:block;
+  position: relative;
+  border: solid lime 2px;
+
+  width: 100%;
+ }
+
+.moneySpent li {
+  width:500px;
+  height:50px;
+  position:relative;
+>>>>>>> 8baac8b6cf32373c6bf3b86c58fbc3265b049463
 
    background: url("http://changceinstitute.org/wp-content/uploads/2013/10/green-city-wallpaper.1920x1080.jpg") no-repeat center center fixed;
    -webkit-background-size: cover;
@@ -17,7 +65,24 @@ html {
    background-size: cover;
 }
 
+<<<<<<< HEAD
 .build-options {
     @include span-columns(3);
   }
 
+=======
+span {
+    background-color: white;
+}
+
+.alerts {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+
+  .alert {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 20px;
+  }
+}
+>>>>>>> 8baac8b6cf32373c6bf3b86c58fbc3265b049463

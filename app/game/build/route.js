@@ -1,9 +1,20 @@
 import Ember from 'ember';
+import config from 'iron-tower/config/environment';
 
 export default Ember.Route.extend({
   actions: {
     buildStructure: function(type) {
-      debugger;
+      var request = Ember.$.ajax(`${config.apiHost}/api/purchaseStructure`, {
+        data: JSON.stringify({type}), method: 'POST'
+      });
+
+      request.then((data) => {
+
+      }, (err) => {
+        var msg = err.responseJSON.message || 'Insufficient funds';
+
+        this.get('flashMessages').warning(msg, {timeout: 1000000});
+      });
     }
   }
 });

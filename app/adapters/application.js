@@ -1,6 +1,7 @@
 import DS from 'ember-data';
+import config from 'iron-tower/config/environment';
 
 export default DS.RESTAdapter.extend({
   namespace: 'api',
-  host: 'http://irontower.azurewebsites.net',
+  // host: config.apiHost,
 });
