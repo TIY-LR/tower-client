@@ -2,6 +2,16 @@
 @import "bourbon";
 @import "neat";
 
+<<<<<<< HEAD
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+=======
 .build-options {
   @include span-columns(3);
 }
@@ -46,9 +56,21 @@ li {
   width:500px;
   height:50px;
   position:relative;
+>>>>>>> 8baac8b6cf32373c6bf3b86c58fbc3265b049463
 
+   background: url("http://changceinstitute.org/wp-content/uploads/2013/10/green-city-wallpaper.1920x1080.jpg") no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
 }
 
+<<<<<<< HEAD
+.build-options {
+    @include span-columns(3);
+  }
+
+=======
 span {
     background-color: white;
 }
@@ -63,3 +85,4 @@ span {
       padding: 20px;
   }
 }
+>>>>>>> 8baac8b6cf32373c6bf3b86c58fbc3265b049463
