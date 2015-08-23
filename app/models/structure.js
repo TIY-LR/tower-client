@@ -7,6 +7,7 @@ import DS from 'ember-data';
 import Ember from 'ember';
 
 export default DS.Model.extend({
+  name: DS.attr('string'),
   upkeep: DS.attr('number'),
   initialCost: DS.attr('number'),
   supportedPop: DS.attr('number'),
