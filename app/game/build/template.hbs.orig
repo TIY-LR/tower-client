@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+=======
+{{!-- import from "build-options" component.  construction options should be here.  If requirements are not
+met for a particular type, then it should not be an available option --}}
+
+{{!-- The buttons will be switched out with the corresponding image. --}}
+
+{{build-options build='buildStructure'}}
+>>>>>>> 3dd00b9dff5b65ce9049bf41eb1563cbf279d60b
+
+{{outlet}}

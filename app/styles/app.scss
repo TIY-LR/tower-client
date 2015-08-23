@@ -1,2 +1,10 @@
 @import "bourbon";
 @import "neat";
+
+.build-options {
+    @include span-columns(3);
+
+    img {
+        width: 100%;
+    }
+}
