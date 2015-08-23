@@ -3,5 +3,5 @@ import config from 'iron-tower/config/environment';
 
 export default DS.RESTAdapter.extend({
   namespace: 'api',
-  // host: config.apiHost,
+  host: config.apiHost,
 });
