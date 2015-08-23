@@ -1,3 +1,9 @@
 {{!-- Build Options Template --}}
 
-{{yield}}
+{{#each structures as |structure|}}
+    <div class="" {{action 'build' structure.type}}>
+        <img src="{{structure.name}}.gif">
+        <span class="">Cost: ${{structure.price}}</span>
+        <span class="">{{structure.description}}</span>
+    </div>
+{{/each}}
