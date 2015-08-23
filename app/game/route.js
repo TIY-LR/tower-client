@@ -1,5 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  // game route, the default route
+  actions: {
+    startGame: function() {
+      this.get('currencyAccrued');
+      this.get('currentPopulation');
+      this.transitionTo('game');
+    },
+  },
 });
