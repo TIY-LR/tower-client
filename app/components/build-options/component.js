@@ -9,13 +9,13 @@ export default Ember.Component.extend({
       name: 'residence',
       description: 'This can hold 3 people.',
       price: 1,
-      type: 'apartment'
+      type: 'residence'
     },
     {
       name: 'laundromat',
       description: 'This requires one employee.',
       price: 1,
-      type: 'laundromat'
+      type: 'laundry'
     },
     {
       name: 'restaurant',
