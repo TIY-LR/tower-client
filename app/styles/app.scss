@@ -4,7 +4,34 @@
 .build-options {
     @include span-columns(3);
 
-    img {
-        width: 100%;
     }
+
+ html{
+    background-image: url("http://naturewallpaperspic.com/wp-content/uploads/2015/04/Hd-1920X1080-Nature-4.jpg");
+    border: solid 20px green;
+
+
+   min-height: 100%;
+
+     }
+
+
+li{
+    display:block;
+    position: relative;
+    border: solid lime 2px;
+    width:250px;
+
+ }
+
+.moneySpent li{
+
+  width:500px;
+  height:50px;
+  position:relative;
+
+}
+
+span{
+    background-color: white;
 }
